@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "enumeration",
+      "enum": [
+        "Tecnico",
+        "Geek",
+        "Secretaria",
+        "Adm"
+      ]
+    },
+    "criador": {
+      "type": "string"
+    },
+    "Publish": {
+      "type": "date"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
